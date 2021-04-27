@@ -1,0 +1,19 @@
+@media only screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 4em;
+        font-family: 'Alex Brush', cursive;
+        margin-left: -200px;
+    }
+
+    header,
+footer {
+    border-radius: 0.25in;
+}
+
+img {
+    float: right;
+    border-radius: 0.25in;
+    /* margin-top: -100px; */
+}
+
+}

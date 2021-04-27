@@ -1,14 +1,11 @@
 body {
-    width: 900px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
 }
 
 img {
-    float: right;
-    max-width: 300px;
-    border-radius: 0.25in;
-    margin-top: -100px;
+    width: 300px;
 }
 
 li {
@@ -16,9 +13,9 @@ li {
 }
 
 h1 {
-    font-size: 4em;
+    font-size: 3em;
     font-family: 'Alex Brush', cursive;
-    margin-left: -200px;
+    margin: 0.15rem;
 }
 
 header,
@@ -28,7 +25,6 @@ footer {
     color: white;
     text-align: center;
     padding: 8px;
-    border-radius: 0.25in;
 }
 
 main {
