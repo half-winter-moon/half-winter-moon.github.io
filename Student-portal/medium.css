@@ -5,15 +5,19 @@
         margin-left: -200px;
     }
 
-    header,
-footer {
-    border-radius: 0.25in;
-}
+    li {
+        margin-left: 50px;
+    }
 
-img {
-    float: right;
-    border-radius: 0.25in;
-    /* margin-top: -100px; */
-}
+    header,
+    footer {
+        border-radius: 0.25in;
+    }
+
+    img {
+        float: right;
+        border-radius: 0.25in;
+        /* margin-top: -100px; */
+    }
 
 }
