@@ -1,6 +1,6 @@
 
 header {
-    background-color: rgb(141, 196, 228);
+    background-color: rgb(169, 222, 252);
     font-family: 'PT Sans', sans-serif;
     text-align: center;
     width: 100%;
@@ -11,7 +11,7 @@ header {
 h2 {
     font-family: 'PT Sans', sans-serif;
     text-align: center;
-    background-color: rgb(228, 227, 141);
+    background-color: rgb(177, 223, 250);
     margin: auto;
     height: 55px;
     width: 100%;
