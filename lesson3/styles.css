@@ -51,6 +51,7 @@ main {
 p {
     padding: 1.5rem;
     font-family: 'Merriweather', serif;
+    text-align: center;
 }
 li {
     font-family: 'Merriweather', serif;
@@ -58,6 +59,7 @@ li {
 h1, h2 {
     padding: 1rem;
     font-family: 'Fjalla One', sans-serif;
+    text-align: center;
 }
 h1 {
     text-align: center;
@@ -67,7 +69,7 @@ h1 {
     width: 100px;
     margin-left: auto;
     margin-right: auto;
-    padding: 50px;
+    /*padding: 50px;*/
 }
 /*colors styling*/
 #colorsScreenshot img {
