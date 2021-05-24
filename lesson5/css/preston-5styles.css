@@ -2,12 +2,10 @@
 
 /*nav bar*/
 nav {
-    /*margin: 0 auto;*/
     max-width: 370px;
     background-color: #86bbbd;
     font-family: 'Merriweather', serif;
-    float: right;
-    margin-top: -150px;
+    margin: 0 auto;
 }
 
 #navigation {
