@@ -41,7 +41,16 @@
         </div>
         <h1>Preston Idaho</h1>
         <div class='hero_block'>
-            <img id='hero_image' src="images/wdd230_image_franklinOriginal.jpeg" alt="hero image">
+            <picture id='hero_image'>
+                
+                <source srcset="images/Inkedhero_600_LI.jpeg" media="(min-width:600px) and (max-width: 799px)">
+                <p class='medium_size'>Medium Size</p>
+                <source srcset="images/Inkedhero_800_LI.jpeg" media="(min-width: 800px)">
+                <div class='large_size'>Large Size</div>
+                <img src="images/Inkedhero_400_LI.jpg" alt="hero image">
+                <div class='small_size'>Small Size</div>
+          
+            </picture>
             <section class='weather_summary'>
                 <h3>Weather Summary</h3>
                 <p>Currently - Light rain</p>

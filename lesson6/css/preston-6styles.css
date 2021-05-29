@@ -106,6 +106,19 @@ footer {
     max-width: 100%;
     margin: auto auto;
     margin-bottom: 20px;
+   
+}
+/* Label on hero image*/
+.hero_block {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.small_size {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 header {
     background-color: #6a6b83;
@@ -212,6 +225,11 @@ p {
     .hero_block p {
         line-height: 4px;
     }
+    .medium_size {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
     .weather_summary {
         position: absolute;
         top: 50px;
@@ -267,6 +285,11 @@ p {
     }
     #hero_image {
         max-width: 800px;
+    }
+    .large_size {
+        position: absolute;
+        top: 20px;
+        right: 20px;
     }
     header {
         padding: 8px;
