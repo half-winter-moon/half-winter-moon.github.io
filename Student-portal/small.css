@@ -27,3 +27,6 @@ main {
     padding: 50px;
     font-size: 1.25em;
 }
+li {
+    padding: 5px;
+}
