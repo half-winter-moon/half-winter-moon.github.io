@@ -1,0 +1,41 @@
+body {
+    font-family: 'Lato', sans-serif;
+   
+}
+.head {
+    text-align: center;
+    background-color: #004d71;
+    color: white;
+  
+}
+tr th {
+    background-color: #89abbc;
+    color: #55565a;
+}
+tr td, tr th{
+    padding: 5px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: #55565a;
+    color: white;
+  }
+  tr:nth-child(odd) {
+    background-color: #7d7d80;
+    color: white;
+  }
+
+div {
+    padding: 15px;
+}
+
+table {
+    margin: 0 auto;
+    box-shadow: 5px 10px 5px rgb(165, 160, 160);
+}
+.trident-logo {
+    width: 100px;
+    display: block;
+    margin: auto auto;
+    padding: 10px;
+}
