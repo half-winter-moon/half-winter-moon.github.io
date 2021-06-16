@@ -1,0 +1,265 @@
+/*small view*/
+
+
+/*nav bar*/
+nav {
+    max-width: 370px;
+    background-color: #86bbbd;
+    font-family: 'Merriweather', serif;
+    margin: 0 auto;
+}
+
+#navigation {
+    list-style: none;
+    padding: 0;
+    grid-template-columns: auto;
+    display: grid;
+}
+
+#navigation li:first-child {
+    display: block;
+}
+
+#navigation li {
+    display: none;
+}
+
+#navigation a {
+    display: block;
+    /*em = compared to parent 
+     rem = compared to the body */
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+#navigation a:hover,
+#navigation a.active:hover {
+    color: white;
+    background-color: #533747;
+}
+
+#navigation a.active {
+    background-color: rgba(0, 0, 0, .55);
+    color: white;
+}
+
+#navigation.responsive li {
+    display: block;
+}
+
+/*header*/
+#logo {
+    width: 100px;
+    float: left;
+    margin: 15px;
+}
+#title {
+    color: white;
+    font-family: 'Merriweather', serif;
+}
+#moto {
+    margin-top: 30px;
+    color: white;
+}
+header {
+    background-color: #6a6b83;
+    padding: 8px;
+}
+
+
+/*main css*/
+body {
+    max-width: 900px;
+    margin: auto auto;
+}
+
+#page_name {
+    margin: 40px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-family: 'Fjalla One', sans-serif;}
+h2 {
+    color: #472f3d;
+    font-size: 1.5rem;
+}
+.tagline {
+    color: #472f3d;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: -10px;
+}
+p {
+    font-family: 'Merriweather', serif;    
+}
+
+article {
+    background-color: #a9bec5;
+    padding: 2px;
+    border: gray solid 2px;
+    border-radius: 15px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 2px 5px 3px rgb(165, 160, 160);
+
+}
+
+.town-pic {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 400px;
+    /*box-shadow: 2px 5px 3px rgb(165, 160, 160);*/
+
+}
+
+/*footer*/
+#preston-map {
+    width: 150px;
+    margin-top:10px;
+    padding: 10px;
+}
+.contact_info img {
+    width: 30px;
+    float: left;
+}
+.contact_info h3 {
+    text-align: center;
+}
+
+footer {
+    font-family: 'Merriweather', serif;
+    background-color:#6a6b83;
+    color: white;
+    padding: 8px;
+    margin-top: 50px;
+    margin-top: 10px;
+}
+
+/* medium screen*/
+@media only screen and (min-width: 34.5em) {
+    nav {
+        max-width: 100%;
+        float: none;
+        margin-top: 1px;
+    }
+
+    #navigation {
+        grid-template-columns: repeat(6, auto);
+    }
+
+    #navigation li {
+        display: block;
+        /*change state in small view*/
+    }
+
+    #navigation li:first-child {
+        display: none;
+    }
+   
+    #title {
+        font-size: 2em;
+    }
+    #moto {
+        font-size: 1.15em;
+        margin-left: 130px;
+    }
+    
+    main {
+        max-width: 800px;
+        margin: auto auto;
+    }
+
+    article {
+        background-color: #a9bec5;
+        padding: 2px;
+        border: none;
+        border-radius: 0px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: none;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 10px;
+    }
+
+    article:nth-child(odd) img {
+        grid-column: 2;
+        margin-right: 10px;
+    }
+
+    article:nth-child(odd) div {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .town-pic {
+        box-shadow: 2px 5px 3px rgb(165, 160, 160);
+    }
+
+    #page_name {
+        text-align: left;
+        font-size: 2rem;
+    }    
+
+    #preston-map {
+        width: 300px;
+        margin: 10px;
+        margin-right: 50px;
+    }
+}
+
+/*large screen*/
+@media only screen and (min-width: 54.5em) {
+    #navigation {
+        width: 100%;
+        margin: 16px auto;
+    }
+    
+    header {
+        padding: 8px;
+    }
+ 
+    #page_name {
+        font-size: 2.5rem;
+    } 
+
+    .preston, .fish-haven, .soda-springs {
+        background-color: #a9bec5;
+        padding: 2px;
+        border: gray solid 2px;
+        border-radius: 15px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 2px 5px 3px rgb(165, 160, 160);
+    
+    }
+
+    .town-pic {
+        box-shadow: none;
+        max-width: 200px;
+    }
+
+    article {
+        display: block;
+        width: 250px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 10px;
+        margin-right: -5px;
+    }
+   
+    footer {
+        margin-top: 20px;
+    }
+}

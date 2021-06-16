@@ -27,6 +27,8 @@ tr:nth-child(even) {
 
 div {
     padding: 15px;
+    border-radius: 10px;
+
 }
 
 table {
