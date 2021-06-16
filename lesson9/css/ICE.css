@@ -1,0 +1,30 @@
+tr td img {
+    max-width: 400px;
+    display: block;
+    margin: auto auto;
+    padding: 10px;
+    border-radius: 40px;
+}
+table {
+    background-color: rgb(70, 117, 56);
+    padding: 5px;
+    margin: 0 auto;
+    font-size: 1.25em;
+    color: lightgrey;
+    box-shadow: 5px 10px 5px grey;
+    font-family: 'Poppins', sans-serif;
+    line-height: 7px;
+}
+thead tr th {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+th {
+    text-align: left;
+    margin-left: 10px;
+}
+th, td {
+    padding: 10px;
+}
