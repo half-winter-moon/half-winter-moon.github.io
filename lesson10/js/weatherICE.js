@@ -1,37 +1,37 @@
 window.addEventListener("load", (event) => {
-    const requestURL = 'https://api.openweathermap.org/data/2.5/weather?zip=83440,US&units=imperial&appid=699c1da2022aa5124ee05e7d3550a1d1';
+    const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83440&appid=699c1da2022aa5124ee05e7d3550a1d1&units=imperial';
 
     fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
     .then(function (rexburg_data) {
+        
         console.table(rexburg_data);
 
-        ul = document.getElementById('weatherInfo');
+        //let presentDay = rexburg_data.list[0].main.temp;
+        
+        let temp1 = document.querySelector('#temp1');
+        let temp2 = document.querySelector('#temp2');
+        let temp3 = document.querySelector('#temp3');
+        let temp4 = document.querySelector('#temp4');
+        let temp5 = document.querySelector('#temp5');
+        let temp6 = document.querySelector('#temp6');
 
-        let name = document.createElement('li');
-        let temp = document.createElement('li');
-        let feels_like = document.createElement('li');
-        let high = document.createElement('li');
-        let low = document.createElement('li');
+        temp1.textContent = Math.round(rexburg_data.list[0].main.temp);
+        temp2.textContent = Math.round(rexburg_data.list[1].main.temp);
+        temp3.textContent = Math.round(rexburg_data.list[2].main.temp);
+        temp4.textContent = Math.round(rexburg_data.list[3].main.temp);
+        temp5.textContent = Math.round(rexburg_data.list[4].main.temp);
+        temp6.textContent = Math.round(rexburg_data.list[5].main.temp);
 
-        let main = rexburg_data['main'];
+        // We were trying to make the day appear dynamically
+        // let day1 = document.querySelector('#day1');
+        // let day2 = document.querySelector('#day2');
+        // let day3 = document.querySelector('#day3');
+        // let day4 = document.querySelector('#day4');
+        // let day5 = document.querySelector('#day5');
 
-        name.innerHTML = 'City: ' + rexburg_data.name;
-        temp.innerHTML = 'Temperature: ' + main.temp;
-        feels_like.innerHTML = 'Feels like: ' + main.feels_like;
-        high.innerHTML = 'High: ' + main.temp_max;
-        low.innerHTML = 'Low: ' + main.temp_min;
-
-        ul.appendChild(name);
-        ul.appendChild(temp);
-        ul.appendChild(feels_like);
-        ul.appendChild(high);
-        ul.appendChild(low);
+        // day1.textContent = currentDay();
     })
-
-
-
-
 })
