@@ -51,24 +51,24 @@ window.addEventListener('load', () => {
     
         // Grab appropriate weather icons from API for 5 day forecast
         let icon1 = document.querySelector('#icon1');
-        let imgInfo1 = preston_data.list[0].weather.icon;
+        let imgInfo1 = preston_data.list[0].weather[0].icon;
         icon1.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo1 + '@2x.png');
 
         let icon2 = document.querySelector('#icon2');
-        let imgInfo2 = preston_data.list[1].weather.icon;
-        icon1.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo2 + '@2x.png');
+        let imgInfo2 = preston_data.list[1].weather[0].icon;
+        icon2.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo2 + '@2x.png');
 
         let icon3 = document.querySelector('#icon3');
-        let imgInfo3 = preston_data.list[2].weather.icon;
-        icon1.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo3 + '@2x.png');
+        let imgInfo3 = preston_data.list[2].weather[0].icon;
+        icon3.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo3 + '@2x.png');
 
-        let icon4 = document.querySelector('#icon1');
-        let imgInfo4 = preston_data.list[3].weather.icon;
-        icon1.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo4 + '@2x.png');
+        let icon4 = document.querySelector('#icon4');
+        let imgInfo4 = preston_data.list[3].weather[0].icon;
+        icon4.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo4 + '@2x.png');
 
-        let icon5 = document.querySelector('#icon1');
-        let imgInfo5 = preston_data.list[4].weather.icon;
-        icon1.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo5 + '@2x.png');
+        let icon5 = document.querySelector('#icon5');
+        let imgInfo5 = preston_data.list[4].weather[0].icon;
+        icon5.setAttribute('src', 'http://openweathermap.org/img/wn/' + imgInfo5 + '@2x.png');
 })
 
     // grab current day weather info from API and display
@@ -80,6 +80,9 @@ window.addEventListener('load', () => {
     })
     .then(function (present_data) {
         console.table(present_data);
+
+        let currently = document.querySelector('#currently');
+        currently.textContent = present_data.weather[0].main;
 
         let windSpeed = document.querySelector('#windSpeed');
         windSpeed.textContent = Math.round(present_data.wind.speed);
