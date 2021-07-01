@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+</head>
+
+<body>
+    <header>
+        <img id='logo' src="images/mountain-tree-river-icon.png" alt="image of mountain with a river">
+        <h2 id='title'>Preston Tourism</h2>
+        <p id='moto'>A place to go to keep you in the know</p>
+        <nav>
+            <ul id="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/index.html">Home</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/preston.html">Preston</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/soda springs.html">Soda Springs</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/fish haven.html">Fish Haven</a></li>
+                <li><a class="active" href="#">Storm Center</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <h1 id='page_name'>Storm Center</h1>
+        <main>
+            <h2 id="form-title">Report a Nearby Storm</h2>
+            <form action="thanks.html" method="get" class="form">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <label class="top">First Name*<input type="text" name="fname" minlength="5" required ></label>
+                    <label class="top">Last Name*<input type="text" name="lname" minlength="5" required ></label>
+                    <label class="top">Email<input type="email" name="email" placeholder="example@emailpovider.com"></label>
+                    <label class="top">Phone number*<input type="tel" name="pnumber" required></label>
+                    <label class="top">Zipcode*<input type="number" name="zcode" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <label class="sbs">Storm date <input type="date" name="sdate"></label>
+                    <label class="top">Storm type
+                        <input list="storm-type" name="stype">
+                        <datalist id="storm-type">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurrican">
+                            <option value="Tornado">
+                        </datalist>
+                    </label>
+                    <label class="sbs">Storm severity (1-10) <input type="range(1 to 10)" name="sseverity"></label>
+                    <label class="top">
+                        <select name="sregion" onchange="selectResponse()">
+                            <option value="" disabled selected>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select></label>
+                    <div id="udanger">Are you in danger?</div>
+                    <label class="sbs"><input type="radio" name="Option" value="Yes">Yes</label>
+                    <label class="sbs"><input type="radio" name="Option" value="No">No</label>
+                    <label class="sbs"><input type="radio" name="Option" value="Maybe">Maybe</label>
+                    <label class="top">Enter additional information or comments<input type="textarea" name="addinfo"></label>
+                </fieldset>
+                <input class="submitButton" type="submit" value="Send Storm Report">
+            </form>
+
+        </main>
+        <footer>
+            <div class='contact_info'>
+                <h3>Contact Information</h3>
+                <img id='preston-map' src="images/preston-map.gif" alt="map of Preston ID">
+                <img src="images/location_icon.png" alt="location pin icon">
+                <p> Preston, Idaho USA</p>
+                <img src="images/phone_icon.png" alt="phone icon">
+                <p> (000)000-0000</p>
+                <img src="images/email_icon.png" alt="mail icon">
+                <p> contact@email.com</p>
+            </div>
+
+            <p>&copy <span id="currentYear"></span> | Jennie Handy | Idaho | <a href="https://www.byui.edu/online"
+                    target="_blank">BYUI Online
+                    Learning</a>
+            </p>
+            <p>Current Date: <span id="currentDate"></span></p>
+        </footer>
+        <script src="../lesson7/js/gallery-7.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Merriweather', 'Fjalla One'
+                    ]
+                }
+            });
+        </script>
+
+    </body>
+
+</html>

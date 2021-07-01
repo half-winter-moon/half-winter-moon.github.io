@@ -1,4 +1,36 @@
 /*small view*/
+/*lazy loading*/
+.loading {
+    background-color: lightgray;
+    min-width: 400px;
+    min-height: 400px;
+    position: relative;
+}
+.placeholder-loading::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -400px;
+    top: 0;
+    height: 100%;
+    width: 400px;
+    background: linear-gradient(to right, transparent 0%, #ffffff 50%, transparent 100%);
+    animation: load 3s;
+    z-index: 50;
+}
+.placeholder-loading {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes load {
+    0% {
+        left: -400px;
+    }
+    100% {
+        left: 100%;
+    }
+}
 
 
 /*nav bar*/
@@ -75,53 +107,31 @@ body {
     max-width: 900px;
     margin: auto auto;
 }
-
-#page_name {
-    margin: 40px;
-    text-align: center;
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
-h1, h2, h3 {
-    font-family: 'Fjalla One', sans-serif;}
-h2 {
-    color: #472f3d;
-    font-size: 1.5rem;
-}
-.tagline {
-    color: #472f3d;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: -10px;
+h1, h3 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 2em;
 }
 p {
-    font-family: 'Merriweather', serif;    
+    font-family: 'Merriweather', serif;
+    margin: 2.5rem;
+}
+.placeholder-loading img {
+    width: 100px;
+    display:block;
+    margin: auto auto;
 }
 
-article {
-    background-color: #a9bec5;
-    padding: 2px;
-    border: gray solid 2px;
-    border-radius: 15px;
-    margin: 20px;
-    text-align: center;
-    box-shadow: 2px 5px 3px rgb(165, 160, 160);
-
-}
-
-.town-pic {
-    display: block;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 400px;
-    /*box-shadow: 2px 5px 3px rgb(165, 160, 160);*/
-
-}
 
 /*footer*/
 #preston-map {
-    width: 150px;
-    margin-top:10px;
-    padding: 10px;
+    width: 200px;
+    margin: 10px;
 }
 .contact_info img {
     width: 30px;
@@ -136,8 +146,6 @@ footer {
     background-color:#6a6b83;
     color: white;
     padding: 8px;
-    margin-top: 50px;
-    margin-top: 10px;
 }
 
 /* medium screen*/
@@ -168,46 +176,57 @@ footer {
         font-size: 1.15em;
         margin-left: 130px;
     }
-    
+
     main {
-        max-width: 800px;
-        margin: auto auto;
-    }
-
-    article {
-        background-color: #a9bec5;
-        padding: 2px;
-        border: none;
-        border-radius: 0px;
-        margin: 10px;
-        text-align: center;
-        box-shadow: none;
-    }
-
-    article {
-        display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 10px;
     }
-
-    article:nth-child(odd) img {
-        grid-column: 2;
-        margin-right: 10px;
-    }
-
-    article:nth-child(odd) div {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .town-pic {
-        box-shadow: 2px 5px 3px rgb(165, 160, 160);
-    }
-
     #page_name {
-        text-align: left;
-        font-size: 2rem;
-    }    
+        grid-template-columns: 1/2;
+        grid-template-rows: 1/1;
+    }
+    .img1 {
+        grid-template-columns: 1/2;
+        grid-template-rows: 2/3;
+    }
+    .img2 {
+        grid-template-columns: 2/3;
+        grid-template-rows: 2/3;
+    }
+    .img3 {
+        grid-template-columns: 1/2;
+        grid-template-rows: 3/4;
+    }
+    .img4 {
+        grid-template-columns: 2/3;
+        grid-template-rows: 3/4;
+    }
+    .img5 {
+        grid-template-columns: 1/2;
+        grid-template-rows: 4/5;
+    }
+    .img6 {
+        grid-template-columns: 2/3;
+        grid-template-rows: 4/5;
+    }
+    .img7 {
+        grid-template-columns: 1/2;
+        grid-template-rows: 5/6;
+    }
+    .img8 {
+        grid-template-columns: 2/3;
+        grid-template-rows: 5/6;
+    }
+    .img9 {
+        grid-template-columns: 1/1;
+        grid-template-rows: 6/7;
+    }
+    
+    
+    
+    
+    
+    
+    
 
     #preston-map {
         width: 300px;
@@ -227,38 +246,10 @@ footer {
         padding: 8px;
     }
  
-    #page_name {
-        font-size: 2.5rem;
-    } 
-
-    .preston, .fish-haven, .soda-springs {
-        background-color: #a9bec5;
-        padding: 2px;
-        border: gray solid 2px;
-        border-radius: 15px;
-        margin: 10px;
-        text-align: center;
-        box-shadow: 2px 5px 3px rgb(165, 160, 160);
-    
-    }
-
-    .town-pic {
-        box-shadow: none;
-        max-width: 200px;
-    }
-
-    article {
-        display: block;
-        width: 250px;
-    }
-
     main {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 10px;
-        margin-right: -5px;
     }
-   
+    .placeholder-loading:hover {box-shadow: 0 0 50px #333;}
     footer {
         margin-top: 20px;
     }

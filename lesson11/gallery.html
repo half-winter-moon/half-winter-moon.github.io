@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="../CSS/normalize.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Gallery</title>
 </head>
 
 <body>
@@ -21,45 +20,38 @@
         <nav>
             <ul id="navigation">
                 <li><a class="ham" href="#">&#9776; Menu</a></li>
-                <li><a class="active" href="#">Home</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/index.html">Home</a></li>
                 <li><a href="https://half-winter-moon.github.io/lesson11/preston.html">Preston</a></li>
                 <li><a href="https://half-winter-moon.github.io/lesson11/soda springs.html">Soda Springs</a></li>
                 <li><a href="https://half-winter-moon.github.io/lesson11/fish haven.html">Fish Haven</a></li>
                 <li><a href="https://half-winter-moon.github.io/lesson11/stormcenter.html">Storm Center</a></li>
-                <li><a href="https://half-winter-moon.github.io/lesson11/gallery.html">Gallery</a></li>
+                <li><a class="active" href="#">Gallery</a></li>
             </ul>
         </nav>
     </header>
-    <h1 id='page_name'>Home</h1>
+<body>
+    <h1 id='page_name'>Weather Gallery</h1>
 
     <main>
-        <article>
-            <img class="town-pic" src="images/sunny-clouds.jfif" alt="sunny clouds over mountains">
-            <div class="preston">
-                <h2>Preston</h2>
-                <p class="tagline">Home of Napoleon Dynamite</p>
-
-            </div>
-        </article>
-        <article>
-            <img class="town-pic" src="images/stormy-mountains-blue-purple.jpg" alt="stormy mountains">
-            <div class="soda-springs">
-                <h2>Soda Springs</h2>
-                <p class="tagline">Historic Oregon Trail Oasis</p>
-
-            </div>
-
-        </article>
-        <article>
-            <img class="town-pic" src="images/stormy-kayak.jfif" alt="stormy lake with kayak">
-            <div class="fish-haven">
-                <h2>Fish Haven</h2>
-                <p class="tagline">Haven to all fish(ermen)</p>
-
-            </div>
-        </article>
-        
-    </main>
+    <div class='placeholder-loading' class='img1'><img loading='lazy' src="images/purple-lightning-nightsky.jfif" alt="placeholder" class='loading'>
+    <h3>Lightning at night.</h3></div>
+    <div class='placeholder-loading' class='img2'><img loading='lazy' src="images/purple-snowy.jpg" alt="placeholder" class='loading'>
+    <h3>A snowy day in the mountains.</h3></div>
+    <div class='placeholder-loading' class='img3'><img loading='lazy' src="images/stormy-kayak.jfif" alt="placeholder" class='loading'>
+    <h3>A stormy kayak trip.</h3></div>
+    <div class='placeholder-loading' class='img4'><img loading='lazy' src="images/stormy-mountains-blue-purple.jpg" alt="placeholder" class='loading'>
+    <h3>Storm in the mountains.</h3></div>
+    <div class='placeholder-loading' class='img5'><img loading='lazy' src="images/sunny-clouds.jfif" alt="placeholder" class='loading'>
+    <h3>Sun and clouds.</h3></div>
+    <div class='placeholder-loading' class='img6'><img loading='lazy' src="images/sunset-clouds.jpg" alt="placeholder" class='loading'>
+    <h3>Sunset with clouds.</h3></div>
+    <div class='placeholder-loading' class='img6'><img loading='lazy' src="images/teal-mountains.jpg" alt="placeholder" class='loading'>
+    <h3>Mountains with some snow.</h3></div>
+    <div class='placeholder-loading' class='img7'><img loading='lazy' src="images/clouds-over-water.jfif" alt="placeholder" class='loading'>
+    <h3>Cloudy day.</h3></div>
+    <div class='placeholder-loading' class='img8'><img loading='lazy' src="images/forest-fog.jfif" alt="placeholder" class='loading'>
+    <h3>Heavy fog over a forest.</h3></div>
+</main>
     <footer>
         <div class='contact_info'>
             <h3>Contact Information</h3>
@@ -71,15 +63,14 @@
             <img src="images/email_icon.png" alt="mail icon">
             <p> contact@email.com</p>
         </div>
-      
 
         <p>&copy <span id="currentYear"></span> | Jennie Handy | Idaho | <a href="https://www.byui.edu/online"
                 target="_blank">BYUI Online
                 Learning</a>
         </p>
-        <br>
+        <p>Current Date: <span id="currentDate"></span></p>
     </footer>
-    <script src="js/index.js"></script>
+    <script src="js/gallery.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -92,5 +83,4 @@
     </script>
 
 </body>
-
 </html>

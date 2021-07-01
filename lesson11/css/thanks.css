@@ -1,6 +1,5 @@
 /*small view*/
 
-
 /*nav bar*/
 nav {
     max-width: 370px;
@@ -59,10 +58,15 @@ nav {
 #title {
     color: white;
     font-family: 'Merriweather', serif;
+    margin-left: -100px;
 }
 #moto {
     margin-top: 30px;
     color: white;
+    text-align: center;
+}
+#moto p {
+    text-align: center;
 }
 header {
     background-color: #6a6b83;
@@ -76,52 +80,31 @@ body {
     margin: auto auto;
 }
 
-#page_name {
-    margin: 40px;
+h2 {
     text-align: center;
 }
 
 h1, h2, h3 {
-    font-family: 'Fjalla One', sans-serif;}
-h2 {
-    color: #472f3d;
-    font-size: 1.5rem;
-}
-.tagline {
-    color: #472f3d;
-    font-style: italic;
-    font-weight: bold;
-    margin-top: -10px;
+    font-family: 'Fjalla One', sans-serif;
+    margin: 2em;
 }
 p {
-    font-family: 'Merriweather', serif;    
+    font-family: 'Merriweather', serif;
+    margin: 2.5rem;
 }
 
-article {
-    background-color: #a9bec5;
-    padding: 2px;
-    border: gray solid 2px;
-    border-radius: 15px;
-    margin: 20px;
+.thanks {
+   
+    margin: auto auto;
+    padding: 50px;
     text-align: center;
-    box-shadow: 2px 5px 3px rgb(165, 160, 160);
-
-}
-
-.town-pic {
-    display: block;
-    padding: 10px;
-    margin: 0 auto;
-    max-width: 400px;
-    /*box-shadow: 2px 5px 3px rgb(165, 160, 160);*/
-
+    margin-bottom: 20px;
 }
 
 /*footer*/
 #preston-map {
-    width: 150px;
-    margin-top:10px;
-    padding: 10px;
+    width: 200px;
+    margin: 10px;
 }
 .contact_info img {
     width: 30px;
@@ -136,8 +119,6 @@ footer {
     background-color:#6a6b83;
     color: white;
     padding: 8px;
-    margin-top: 50px;
-    margin-top: 10px;
 }
 
 /* medium screen*/
@@ -169,45 +150,6 @@ footer {
         margin-left: 130px;
     }
     
-    main {
-        max-width: 800px;
-        margin: auto auto;
-    }
-
-    article {
-        background-color: #a9bec5;
-        padding: 2px;
-        border: none;
-        border-radius: 0px;
-        margin: 10px;
-        text-align: center;
-        box-shadow: none;
-    }
-
-    article {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 10px;
-    }
-
-    article:nth-child(odd) img {
-        grid-column: 2;
-        margin-right: 10px;
-    }
-
-    article:nth-child(odd) div {
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .town-pic {
-        box-shadow: 2px 5px 3px rgb(165, 160, 160);
-    }
-
-    #page_name {
-        text-align: left;
-        font-size: 2rem;
-    }    
 
     #preston-map {
         width: 300px;
@@ -227,37 +169,6 @@ footer {
         padding: 8px;
     }
  
-    #page_name {
-        font-size: 2.5rem;
-    } 
-
-    .preston, .fish-haven, .soda-springs {
-        background-color: #a9bec5;
-        padding: 2px;
-        border: gray solid 2px;
-        border-radius: 15px;
-        margin: 10px;
-        text-align: center;
-        box-shadow: 2px 5px 3px rgb(165, 160, 160);
-    
-    }
-
-    .town-pic {
-        box-shadow: none;
-        max-width: 200px;
-    }
-
-    article {
-        display: block;
-        width: 250px;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-left: 10px;
-        margin-right: -5px;
-    }
    
     footer {
         margin-top: 20px;

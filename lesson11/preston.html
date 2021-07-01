@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="css/preston.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Merriweather&display=swap" rel="stylesheet">
+
+    <title>Preston Tourism</title>
+</head>
+
+<body>
+    <header>
+        <img id='logo' src="images/mountain-tree-river-icon.png" alt="image of mountain with a river">
+        <h2 id='title'>Preston Tourism</h2>
+        <p id='moto'>A place to go to keep you in the know</p>
+        <nav>
+            <ul id="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/index.html">Home</a></li>
+                <li><a class="active" href="#">Preston</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/soda springs.html">Soda Springs</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/fish haven.html">Fish Haven</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/stormcenter.html">Storm Center</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson11/gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id='pancakeDay' class="banner-content">
+            <img src="images/pancakes.jpg" alt="pancakes">
+
+            <h1 id='pancake-heading'>Saturday = Preston Pacakes in the Park!</h1>
+            <p>9:00a.m. Saturday at the city park pavilion, come join the community for a pancake breakfast!</p>
+        </div>
+        <h1>Preston Idaho</h1>
+        <div class='hero_block'>
+            <img id='hero_image' src="images/stormy-mountains-blue-purple.jpg">
+            <section class='weather_summary'>
+                <h3>Weather Summary</h3>
+                <p>Currently - <span id="currently"></span></p>
+                <p>High - <span id='highTemp'></span>°F</p>
+                <p>Wind Chill - <span id='windChill'></span>°F</p>
+                <p>Humidity - <span id='humidity'></span>%</p>
+                <p>Wind Speed - <span id='windSpeed'></span>mph</p>
+            </section>
+        </div>
+        <div class="five_day">
+            <h3>5 Day Forecast</h5>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Wed</th>
+                            <th>Thur</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+                        </tr>
+                        <tr>
+                            <td><img id='icon1' alt="forecast picture" class="forecast" src="#"></td>
+                            <td><img id="icon2" alt="forecast picture" class="forecast" src="images/rainy-cloud-icon.png"></td>
+                            <td><img id="icon3" alt="forecast picture" class="forecast" src="images/cloud-icon.png"></td>
+                            <td><img id="icon4" alt="forecast picture" class="forecast" src="images/sun-wind-cloud-icon.png"></td>
+                            <td><img id="icon5" alt="forecast picture" class="forecast" src="images/cloud-icon.png"></td>
+                        </tr>
+                        <tr>
+                            <td><span id="temp1"></span>°F</td>
+                            <td><span id="temp2"></span>°F</td>
+                            <td><span id="temp3"></span>°F</td>
+                            <td><span id="temp4"></span>°F</td>
+                            <td><span id="temp5"></span>°F</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+
+        <div class='article_block'>
+            <h3>Local Snowy Sunset Photographer</h3>
+            <img src="images/purple-snowy.jpg" alt="placeholder">
+
+            <p>Who doesn't love a stunning photo of snow with a lilac sunset reflecting off of it? Local nature
+                Photographer Jon Smith has been amazing the community with his new photos on exhibit.</p>
+            <p>Smith's stunning work can be seen at a showing this week at the Preston Town Hall. Light refreshments
+                will be served in an environment fit for the whole family!</p>
+        </div>
+    </main>
+    <footer>
+        <div class='contact_info'>
+            <h3>Contact Information</h3>
+            <img id='preston-map' src="images/preston-map.gif" alt="map of Preston ID">
+            <img src="images/location_icon.png" alt="location pin icon">
+            <p> Preston, Idaho USA</p>
+            <img src="images/phone_icon.png" alt="phone icon">
+            <p> (000)000-0000</p>
+            <img src="images/email_icon.png" alt="mail icon">
+            <p> contact@email.com</p>
+        </div>
+
+        <p>&copy <span id="currentYear"></span> | Jennie Handy | Idaho | <a href="https://www.byui.edu/online"
+                target="_blank">BYUI Online
+                Learning</a>
+        </p>
+        <p>Current Date: <span id="currentDate"></span></p>
+        <p>Weather information retrieved from <a href="https://openweathermap.org/api">OpenWeatherMap</a></p>
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Merriweather', 'Fjalla One'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
