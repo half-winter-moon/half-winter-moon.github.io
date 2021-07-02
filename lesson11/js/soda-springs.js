@@ -8,12 +8,9 @@ window.addEventListener('load', () => {
         mainnav.classList.toggle('responsive')
     }, false);
 
-    // To solve the mid resizing issue with responsice class on
-    // window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
     // Display the current date
     let currentDate = new Date();
-
+    document.getElementById("currentDate").textContent = currentDate;
 
     // Retrieve and display the current year
     let d = new Date();
@@ -102,7 +99,7 @@ window.addEventListener('load', () => {
                 windChill.innerHTML = 'N/A';
             }
         })
-
+    //Soda Springs activities:
     const requestURL3 = 'https://byui-cit230.github.io/weather/data/towndata.json';
     fetch(requestURL3)
         .then(function (response) {
@@ -117,7 +114,6 @@ window.addEventListener('load', () => {
                     var index = town; 
                 }
             }
-                //Soda Springs activities:
             let ssevents = document.querySelector("#soda-springs-events");
             console.log(towns[index]);
             for (town of towns[index].events){
@@ -127,9 +123,6 @@ window.addEventListener('load', () => {
                 ssevents.appendChild(p);
             }
         })
-
-
-
 
 
 });
