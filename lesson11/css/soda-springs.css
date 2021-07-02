@@ -97,9 +97,10 @@ footer {
 #title {
     color: white;
     font-family: 'Merriweather', serif;
+    margin-top: 20px;
 }
 #moto {
-    margin-top: -30px;
+    margin-top: -40px;
     color: white;
 }
 #hero_image {
@@ -151,6 +152,7 @@ header {
 .contact_info img {
     width: 30px;
     float: left;
+    margin-right: 10px;
 }
 .contact_info h3 {
     text-align: center;
