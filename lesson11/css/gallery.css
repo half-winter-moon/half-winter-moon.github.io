@@ -136,6 +136,7 @@ p {
 .contact_info img {
     width: 30px;
     float: left;
+    margin-right: 10px;
 }
 .contact_info h3 {
     text-align: center;

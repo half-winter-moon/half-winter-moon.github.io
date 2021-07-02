@@ -91,9 +91,10 @@ nav {
 #title {
     color: white;
     font-family: 'Merriweather', serif;
+    margin-top: 20px;
 }
 #moto {
-    margin-top: 30px;
+    margin-top: -30px;
     color: white;
 }
 header {
@@ -108,8 +109,11 @@ body {
     margin: auto auto;
 }
 
+#page_name {
+    text-align: left;
+}
 form {
-    max-width: 700px;
+    max-width: 500px;
     position: relative;
     margin-bottom: 80px;
 }
@@ -121,6 +125,7 @@ form input.submitButton {
 }
 
 form fieldset {
+    max-width: 500px;
     margin: 2rem 0;
     border: 1px solid #76949f;
     border-radius: 10px;
@@ -173,6 +178,7 @@ form label.top input:required {
 }
 #form-title {
     margin-bottom: -5px;
+    text-align: center;
 }
 
 form label.top input:required {
@@ -196,10 +202,12 @@ p, label, input {
     width: 200px;
     margin-top: -100px;
     padding: 5px;
+    margin: 10px;
 }
 .contact_info img {
     width: 30px;
     float: left;
+    margin-right: 10px;
 }
 .contact_info h3 {
     text-align: center;
@@ -252,6 +260,8 @@ footer {
         max-width: 700px;
         position: relative;
         margin-bottom: 80px;
+        margin-left: 100px;
+
     }
 
     form input.submitButton {
@@ -290,6 +300,10 @@ footer {
  
     form label.sbs {
         padding: .4rem 0;
+
+    }
+    form {
+    margin-left: 120px;
 
     }
    
