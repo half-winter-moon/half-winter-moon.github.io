@@ -11,15 +11,6 @@ window.addEventListener('load', () => {
 
     // Display the current date
     let currentDate = new Date();
-
-    // If it is friday, display an announcement about pancakes in the park
-    const pancakeDay = document.querySelector('#pancakeDay');
-    if (currentDate.getDay() == 5) {
-        pancakeDay.style.display = 'block';
-    }
-    else {
-        pancakeDay.style.display = 'none';
-    }
     document.getElementById("currentDate").textContent = currentDate;
 // Retrieve and display the current year
     let d = new Date();
@@ -28,7 +19,7 @@ window.addEventListener('load', () => {
 
 
     //grab next five days forcast from API and display
-    const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83263&appid=699c1da2022aa5124ee05e7d3550a1d1&units=imperial';
+    const requestURL = 'https://api.openweathermap.org/data/2.5/forecast?zip=83287&appid=699c1da2022aa5124ee05e7d3550a1d1&units=imperial';
 
     fetch(requestURL)
     .then(function (response) {
@@ -72,7 +63,7 @@ window.addEventListener('load', () => {
 })
 
     // grab current day weather info from API and display
-    const requestURL2 = 'https://api.openweathermap.org/data/2.5/weather?zip=83263,US&units=imperial&appid=699c1da2022aa5124ee05e7d3550a1d1';
+    const requestURL2 = 'https://api.openweathermap.org/data/2.5/weather?zip=83287,US&units=imperial&appid=699c1da2022aa5124ee05e7d3550a1d1';
 
     fetch(requestURL2)
     .then(function (response) {
@@ -108,4 +99,28 @@ window.addEventListener('load', () => {
         windChill.innerHTML = 'N/A';
     }
     })
+    //Fish Haven activities:
+    const requestURL3 = 'https://byui-cit230.github.io/weather/data/towndata.json';
+    fetch(requestURL3)
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (jsonObject) {
+            //console.table(jsonObject); //temporary checking for valid respons and data parsing
+            const towns = jsonObject['towns'];
+           
+            for (town in towns){
+                if (towns[town].name == "Fish Haven"){
+                    var index = town; 
+                }
+            }
+            let ssevents = document.querySelector("#fish-haven-events");
+            console.log(towns[index]);
+            for (town of towns[index].events){
+                let p = document.createElement('p');
+                p.textContent = town;
+                console.log(towns.events);
+                ssevents.appendChild(p);
+            }
+        })
 });
