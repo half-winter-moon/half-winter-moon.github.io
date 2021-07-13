@@ -1,0 +1,57 @@
+[
+    {
+        "name":"Boise Idaho Temple",
+        "phone":"208-322-4422",
+        "address1":"1211 S Cole Rd",
+        "city":"Boise",
+        "state":"ID",
+        "zip":83709,
+        "imageurl":"https://assets.ldscdn.org/29/8b/298bdc171826d2561184579b7f51521f36994836/boise_idaho_temple_sunshine.jpeg",
+        "services":["No clothing rental", "No cafeteria", "No patron housing", "Distribution Center Nearby"],
+        "dedicationDate":"25 May 1984"
+    },
+    {
+        "name":"Rexburg Idaho Temple",
+        "phone":"208-656-0880",
+        "address1":"750 S 2nd E",
+        "city":"Rexburg",
+        "state":"ID",
+        "zip":83440,
+        "imageurl":"https://assets.ldscdn.org/29/8a/298a8b01fbc736923e83e7c748e60abcad8511c9/rexburg_idaho_temple.jpeg",
+        "services":["Clothing rental", "No cafeteria", "No patron housing", "Distribution Center Nearby"],
+        "dedicationDate":"10 February 2008"
+    },
+    {
+        "name":"Raleigh North Carolina Temple",
+        "phone":"919-362-4135",
+        "address1":"574 Bryan Dr",
+        "city":"Apex",
+        "state":"NC",
+        "zip":27502,
+        "imageurl":"https://assets.ldscdn.org/e7/42/e742580e631a084b2b3c57580040637ceee8dec8/raleigh_north_carolina_temple.jpeg",
+        "services":["No clothing rental", "No cafeteria", "No patron housing", "No distribution Center Nearby"],
+        "dedicationDate":"18 December 1999"
+    },
+    {
+        "name":"Phoenix Arizona Temple",
+        "phone":"623-474-9500",
+        "address1":"5220 W Pinnacle Peak Rd",
+        "city":"Phoenix",
+        "state":"AZ",
+        "zip":85310,
+        "imageurl":"https://assets.ldscdn.org/c8/91/c8912bcd86df38e1052637c724b81082265be6f3/phoenix_arizona_temple_exterior.jpg",
+        "services":["No clothing rental", "No cafeteria", "No patron housing", "No distribution Center Nearby"],
+        "dedicationDate":"16 November 2014"
+    },
+    {
+        "name":"Payson Utah Temple",
+        "phone":"801-754-4949",
+        "address1":"1494 S 930 W",
+        "city":"Payson",
+        "state":"UT",
+        "zip":84651,
+        "imageurl":"https://assets.ldscdn.org/c8/b5/c8b5e860a7edbbef90734c83be366e8d359d2c0b/payson_utah_temple.jpg",
+        "services":["Clothing rental", "No cafeteria", "No patron housing", "Distribution Center Nearby"],
+        "dedicationDate":"7 June 2015"
+    }
+]
