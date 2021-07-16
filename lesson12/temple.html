@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/normalize.css">
+    <link rel="stylesheet" href="css/temple.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="title-banner">
+            <h2 id='title'>Temple Inn & Suites</h2>
+            <p id='moto'>We love to see you at the temple</p>
+        </div>
+        <div class="banner-pic">
+            <img src="images/purple-clouds-temple.jpg" alt="temple with purple clouds">
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a class="ham" href="#">&#9776; Menu</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson12/index.html">Home</a></li>
+                <li><a class="active" href="#">Temple</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson12/reservation.html">Reservation</a></li>
+                <li><a href="https://half-winter-moon.github.io/lesson12/contact.html">Contact</a></li>
+                <div class="dropdown">
+                    <li><a href="https://half-winter-moon.github.io/lesson12/services.html">Services</a></li>
+                    <div class="dropdown-content">
+                        <a href="https://half-winter-moon.github.io/lesson12/reception.html">Receptions</a>
+                        <a href="https://half-winter-moon.github.io/lesson12/missionary.html">Temple Missionaries</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <h1 id='page_name'>Temple</h1>
+
+    <main>
+        <div class="temples"></div>
+    </main>
+    <footer>
+        <div class='contact_info'>
+            <h3>Contact Information</h3>
+            <img src="images/phone_icon.png" alt="phone icon">
+            <p> (000)000-0000</p>
+            <img src="images/email_icon.png" alt="mail icon">
+            <p> contact@email.com</p>
+        </div>
+
+
+        <p>&copy <span id="currentYear"></span> | Jennie Handy | <a href="https://www.byui.edu/online"
+                target="_blank">BYUI Online
+                Learning</a>
+        </p>
+        <br>
+    </footer>
+    <script src="js/temples.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto Slab', 'Lato'
+                ]
+            }
+        });
+    </script>
+
+</body>
+
+</html>

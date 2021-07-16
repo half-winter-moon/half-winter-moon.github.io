@@ -98,7 +98,7 @@ nav {
 }
 #title {
     color: #a9ddd6;
-    font-family: 'Lato', serif;
+    font-family: 'Roboto Slab', serif;
     margin-top: 20px;
     text-align: center;
 }
@@ -138,7 +138,7 @@ p {
     font-family: 'Lato', serif;  
     padding: 20px;  
     text-align: justify;
-    max-width: 300px;
+    /* max-width: 300px; */
     margin: auto auto;
 }
 
@@ -274,5 +274,12 @@ footer {
    
     footer {
         margin-top: 20px;
+        text-align: center;
+    }
+    .contact_info p {
+        margin-left: 350px;
+    }
+    .contact_info img {
+        margin-left: 300px;
     }
 }
