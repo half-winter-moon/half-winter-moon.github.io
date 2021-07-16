@@ -135,12 +135,17 @@ h2 {
 }
 
 p {
-    font-family: 'Lato', serif;  
     padding: 20px;  
     text-align: justify;
-    /* max-width: 300px; */
     margin: auto auto;
+    font-family: 'Lato', sans-serif;
+} 
+p, li {
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    line-height: 20px;
 }
+
 
 .banner-pic img {
     max-width: 400px;
@@ -148,11 +153,6 @@ p {
     margin: auto auto;
 }
 
-#jesusSmiles {
-   padding: 10px;
-    display: block;
-    margin: auto auto;
-}
 
 
 
@@ -173,6 +173,7 @@ footer {
     padding: 8px;
     line-height: 2px;
     text-align: center;
+    margin-top: 50px;
 }
 
 /* medium screen*/
@@ -217,9 +218,22 @@ footer {
         grid-column: 2/3;
         font-size: 2rem;
     }   
+    .p1 {
+        grid-column:2/3;
+        
+    }
+    .specialServices {
+        grid-column: 2/3;
+    }
+    .freeAmenities {
+        grid-column: 2/3;
+    }
+    .call {
+        grid-column: 1/4;
+        text-align: left;
+    }
     
     p {
-        font-family: 'Merriweather', serif;  
         padding: 20px;  
         text-align: justify;
         max-width: 300px;
@@ -239,13 +253,7 @@ footer {
         margin: auto auto;
     }
     
-    #jesusSmiles {
-       padding: 10px;
-        display: block;
-        margin: auto auto;
-        grid-column: 3/4;
-        width: 250px;
-    }
+ 
     .contact_info img {
         margin-left: 200px;
     }
@@ -270,7 +278,23 @@ footer {
     #page_name {
         font-size: 2.5rem;
     } 
+    .p1 {
+        grid-column:1/4;
+        
+    }
+    .specialServices {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .freeAmenities {
+        grid-column: 3/3;
+        grid-row: 3/4;
 
+    }
+    .call {
+     
+        text-align: left;
+    }
    
     footer {
         margin-top: 20px;
