@@ -239,7 +239,7 @@ footer {
     
     p {
         padding: 20px;  
-        text-align: justify;
+        text-align: left;
         max-width: 300px;
         margin: auto auto;
     }

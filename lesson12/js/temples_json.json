@@ -57,9 +57,7 @@
             "zip": 85310,
             "imageurl": "https://assets.ldscdn.org/c8/91/c8912bcd86df38e1052637c724b81082265be6f3/phoenix_arizona_temple_exterior.jpg",
             "services": [
-                "No clothing rental",
-                "No cafeteria",
-                "No patron housing",
+                "No clothing rental","No cafeteria","No patron housing",
                 "No distribution Center Nearby"
             ],
             "dedicationDate": "16 November, 2014"

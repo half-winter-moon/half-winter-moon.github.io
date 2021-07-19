@@ -31,8 +31,9 @@ window.addEventListener('load', () => {
             card.appendChild(image);
 
             let dDate = document.createElement('p');
-            dDate.textContent = 'Date of Dedication: ' + temples[i].dedicationdate;
+            dDate.textContent = 'Date of Dedication: ' + temples[i].dedicationDate;
             card.appendChild(dDate);
+
 
             // let serviceIntro = document.createElement('p');
             // serviceIntro.textContent = 'Services: ';
